@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.all-content{
+    background: #2e1700;
+}
+
+/*navbar*/
+.navbar{
+    background-color: #573818;
+    padding-left: 50px;
+    /*font-weight: bold;*/
+}
+
+#logo{
+    font-size: 23px;
+    color: white;
+    text-shadow: 4px 3px 3px black;
+}
+
+#logo img{
+    margin-bottom:15px ;
+    margin-right: 15px;
+}
+
+.navbar-nav{
+    margin-left: 10px;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    margin-left: 15px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+    border-radius: 15px;
+}
+
+.icons{
+    margin-left: 30px;
+}
+
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+/*navbar end*/
+
+/*home section*/
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/bg2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+}
+.home .img img{
+    width: 80%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight:bold;
+    text-shadow: 1px 5px 3px black;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 4px;    
+}
+
+.content h2{
+    color: white;
+    font-size: 60px;
+    font-weight:bold;
+    text-shadow: 1px 5px 3px black;
+}
+
+.changecategory::after{
+    content: " ";
+    color:rgb(181, 124, 19);
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0%{content: "Cakes";}
+    20%{content: "Deserts";}
+    50%{content: "Slice cakes";}
+    60%{content: "Cupcakes";}
+    100%{content: "Party cakes";}
+}
+
+.content p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 5px 3px black;
+}
+
+.content .btn{
+    background-color: #573818;
+    color: white;
+    width: 110px;
+    height: 38px;
+    
+}
+
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+/*home section*/
+
+#box{
+    margin-top: 50px;
+}
+
+#box .card{
+   margin-bottom: 50px;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.5 ease;
+    border:solid whitesmoke;
+    border-radius: 4px;
+}
+
+#box .card:hover{
+    transform: translateY(-10px);
+}
+
+.text{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#text1{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 5px 3px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+    font-size: 40px;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/banner2.png);
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: cenetr;
+}
+
+.banner .img{
+    flex: 1 1 400px;
+}
+
+.banner .img img{
+    width: 100%;
+}
+
+.banner .content{
+    flex: 1 1 400px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.banner .content h3{
+    color:rgba(161, 109, 14, 1);
+    font-weight: bold; 
+}
+
+.banner .content h2{
+    color:rgba(161, 109, 14, 1);
+    font-weight: bold;
+}
+
+.banner .content p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 5px 3px black;
+}
+
+.btnorder button{
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+    width: 140px;
+    height:38px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width:800px) {
+    .banner .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:855px) {
+    .banner  {
+        height: 100vh;}
+
+    .banner .img img{
+            height: 94%;
+        }   
+}
+/*banner*/
+/*product-card*/
+#product-cards h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 5px 3px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+
+#product-cards .card{
+    background-color: rgba(161, 109, 14, 1);
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+.overlay{
+    display: block;
+    position: absolute;
+    top: 10%;
+    /*margin-left: 0px;*/
+    width: 70px;
+    opacity: 0;
+}
+
+#product-cards .card:hover .overlay{
+    opacity: 1;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+.overlay i .img{
+    background-color: #2e1700;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    padding: 7px;
+    margin: -20px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+#product-cards h3{
+    color: white;
+    text-shadow: 1px 5px 3px black;
+}
+
+.star .checked{
+    color:yellow;
+}
+
+#product-cards p{
+    color: #2e1700;
+    font-weight: bold;
+}
+
+#product-cards h6{
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 3px 3px black;
+    font-weight: bold;
+}
+
+#product-cards span button{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 2px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 2px solid #573818;
+    font-weight: bold;
+    transform: 0.5s ease;
+    background: transparent;
+    border-radius: 5px;
+}
+
+#product-cards span button:hover{
+    background: #2e1700;
+    color: white;
+}
+/*product-card ENDS*/
+
+/*gallery*/
+#galllery{
+    margin-top: 50px;
+}
+
+#gallery h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 5px 3px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+
+#gallery .card{
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+
+#gallery .overlay{
+    opacity: 0;
+    width: 100%;
+    color:rgb(228, 151, 6);
+    text-shadow:1px 1px 1px black;
+}
+
+#gallery .card:hover .overlay{
+    opacity: 1;
+    transition: 0.5s ease;
+    margin-top: 20px;   
+}
+/*gallery ends*/
+
+/*about us*/
+#about {
+    margin-top: 50px;
+}
+
+#about h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 5px 3px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+}
+
+#about .card{
+    box-shadow: 0 0 3px black;
+    background-color: rgba(161, 109, 14, 1);
+}
+
+#about p{
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 3px 3px black;
+    font-weight: bold;
+}
+
+#bt button{
+    width: 150px;
+    height: 32px;
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    #about p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:760px){
+    #about p{
+        font-size: 20px;
+    }
+}
+/*about us ends*/
+
+/*contact*/
+#contact{
+    margin-top: 100px;
+}
+
+#contact h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgba(161, 109, 14, 1);
+    text-shadow: 1px 5px 3px black;
+    border-bottom: 2px solid rgba(161, 109, 14, 1);
+    margin-bottom: 20px;
+}
+
+#contact input{
+    background-color: rgba(161, 109, 14, 1);
+}
+#contact input::placeholder{
+    color: white;
+}
+
+#contact textarea{
+    background-color: rgba(161, 109, 14, 1);
+}
+
+#contact textarea::placeholder{
+    color: white;
+}
+
+#messagebtn{
+    text-align: center;
+}
+
+#messagebtn button{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(161, 109, 14, 1);
+    cursor: pointer;
+    color: white;
+}
+
+/*contact ends*/
+
+#footer{
+    width: 100%;    
+    background-color: #573818;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 50px;
+}
+
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+
+#footer p{
+    color: white;
+}
+
+.icons i{
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    padding: 6px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icons i:hover{
+    background-color: rgba(161, 109, 14, 1);
+    color: white;
+}
+
+.copyright{
+    color: white;
+    margin-top: 20px;
+}
+.credit{
+    color: white;
+}
+
+.arrow{
+    position: fixed;
+    background-color: rgba(161,109,14,1);
+    border-radius: 40px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
